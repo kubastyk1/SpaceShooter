@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpacecraftShooting : MonoBehaviour {
+public class AsteroidGenerator : MonoBehaviour {
 
     public GameObject bulletPrefab;
 
-    public float fireDelay = 0.25f;
+    public float fireDelay = 1f;
     float cooldownTimer = 0;
 
     void Update()
@@ -15,8 +15,8 @@ public class SpacecraftShooting : MonoBehaviour {
         if (cooldownTimer <= 0)
         {
             cooldownTimer = fireDelay;
-
-            Instantiate(bulletPrefab, transform.Find("GunSpot"));
+      //      transform.Find("AsteroidStartPosition").position = Vector3.left * 2;
+            Instantiate(bulletPrefab, transform.Find("AsteroidStartPosition"));
         }
     }
 }

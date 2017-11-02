@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletSelfDestruct : MonoBehaviour {
+public class ObjectDestroyer : MonoBehaviour {
 
-    public float timer = 5f;
+    public float timer = 0;
 
-	void Update () {
+    void Update()
+    {
         timer -= Time.deltaTime;
 
-        if(timer <= 0)
+        if (timer <= 0)
         {
             Destroy(gameObject);
         }
-	}
+    }
 }

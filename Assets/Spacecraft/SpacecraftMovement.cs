@@ -22,9 +22,9 @@ public class SpacecraftMovement : MonoBehaviour
     }
 
     void Update () {
-
-        /*   Vector3 spacecraftPosition = transform.position;
-           spacecraftPosition.x += maxSpeed * Time.deltaTime;
-           transform.position = spacecraftPosition; */
+        //Activate Left & Right keybard arrow
+        Vector3 spacecraftPosition = transform.position;
+        spacecraftPosition.x += Input.GetAxis("Horizontal") * maxSpeed * Time.deltaTime;
+        transform.position = spacecraftPosition;
     }
 }
