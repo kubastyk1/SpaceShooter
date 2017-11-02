@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4027876318783596}
   - component: {fileID: 212811607563967474}
   - component: {fileID: 114171457941804058}
-  - component: {fileID: 61697738082489470}
   - component: {fileID: 50440933753858286}
+  - component: {fileID: 61697738082489470}
   - component: {fileID: 114536272618374266}
   - component: {fileID: 114568959957095404}
   - component: {fileID: 114090661081047606}
@@ -41,7 +41,7 @@ Transform:
   m_GameObject: {fileID: 1142160064196928}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.42, y: 3.38, z: 0}
-  m_LocalScale: {x: 0.5739224, y: 0.54643387, z: 1}
+  m_LocalScale: {x: 30, y: 30, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -89,7 +89,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.56, y: 2.56}
+  m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
 --- !u!114 &114090661081047606
 MonoBehaviour:

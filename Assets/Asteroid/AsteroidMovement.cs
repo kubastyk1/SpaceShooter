@@ -5,26 +5,35 @@ using UnityEngine;
 public class AsteroidMovement : MonoBehaviour {
 
     float maxSpeed = 2f;
-    int iteration = 0;
-    float currentRundom = 0;
+    int turnDelay = 0;
+    float randomXPosition = 0;
+    float startXPosition = 0;
 
     void Start()
     {
-        currentRundom = Random.Range(-0.1f, 0.1f);
+        randomXPosition = Random.Range(0, 0.1f);
+        startXPosition = transform.position.x;
     }
 
     void Update () {
         Vector3 spacecraftPosition = transform.position;
-       // Vector3 temp = new Vector3(Random.Range(-10.6f, 10.6f), Random.Range(-10.6f, 10.6f), Random.Range(-10.6f, 10.6f));
         spacecraftPosition.y -= maxSpeed * Time.deltaTime;
-        if(iteration < 120)
+
+        if(turnDelay < 120)
         {
-            spacecraftPosition.x += currentRundom;
-            iteration++;
+            if(startXPosition < 0)
+            {
+                spacecraftPosition.x += randomXPosition;
+            } else
+            {
+                spacecraftPosition.x -= randomXPosition;
+            }
+            turnDelay++;
         } else
         {
-            currentRundom = Random.Range(-0.1f, 0.1f);
-            iteration = 0;
+            randomXPosition = Random.Range(0, 0.1f);
+            startXPosition = transform.position.x;
+            turnDelay = 0;
         }
 
         transform.position = spacecraftPosition;

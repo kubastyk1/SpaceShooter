@@ -15,7 +15,9 @@ public class AsteroidGenerator : MonoBehaviour {
         if (cooldownTimer <= 0)
         {
             cooldownTimer = fireDelay;
-      //      transform.Find("AsteroidStartPosition").position = Vector3.left * 2;
+            transform.Find("AsteroidStartPosition").position = new Vector3(0, transform.Find("AsteroidStartPosition").position.y, 0);
+            transform.Find("AsteroidStartPosition").position += new Vector3(Random.Range(-10f, 10f), 0,0);
+
             Instantiate(bulletPrefab, transform.Find("AsteroidStartPosition"));
         }
     }
