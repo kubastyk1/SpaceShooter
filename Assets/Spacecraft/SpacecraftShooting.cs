@@ -6,8 +6,10 @@ public class SpacecraftShooting : MonoBehaviour {
 
     public GameObject bulletPrefab;
 
-    public float fireDelay = 0.25f;
-    float cooldownTimer = 0;
+    public float fireDelay;
+    float cooldownTimer = 1f;
+
+    public Transform shotSpawn;
 
     void Update()
     {
@@ -16,7 +18,7 @@ public class SpacecraftShooting : MonoBehaviour {
         {
             cooldownTimer = fireDelay;
 
-            Instantiate(bulletPrefab, transform.Find("GunSpot"));
+            Instantiate(bulletPrefab, shotSpawn.position, shotSpawn.rotation);
         }
     }
 }
