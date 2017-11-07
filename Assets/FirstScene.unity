@@ -125,7 +125,6 @@ GameObject:
   - component: {fileID: 142507236}
   - component: {fileID: 142507241}
   - component: {fileID: 142507240}
-  - component: {fileID: 142507242}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -256,22 +255,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &142507242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 142507235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f892e82483e0ec04db3f4040707b0b1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab:
-  - {fileID: 1461262922357752, guid: 3572d82778a1fec4d874b70932aaa1c8, type: 2}
-  - {fileID: 1142160064196928, guid: e759e3a545f211e4f839bb331024577c, type: 2}
-  - {fileID: 1884509013380444, guid: db8caab085787f24f999639eaa2897f7, type: 2}
-  fireDelay: 2
 --- !u!1 &417553173
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,6 +337,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 682557077}
+  - component: {fileID: 682557078}
   m_Layer: 0
   m_Name: AsteroidStartPosition
   m_TagString: Untagged
@@ -379,6 +363,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 266}
   m_SizeDelta: {x: 95.1, y: 101.6}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &682557078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 682557076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f892e82483e0ec04db3f4040707b0b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab:
+  - {fileID: 1142160064196928, guid: e759e3a545f211e4f839bb331024577c, type: 2}
+  - {fileID: 1461262922357752, guid: 3572d82778a1fec4d874b70932aaa1c8, type: 2}
+  - {fileID: 1884509013380444, guid: db8caab085787f24f999639eaa2897f7, type: 2}
+  fireDelay: 2
 --- !u!1 &883902063
 GameObject:
   m_ObjectHideFlags: 0
