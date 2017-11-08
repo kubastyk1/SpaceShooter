@@ -197,7 +197,7 @@ RectTransform:
   m_GameObject: {fileID: 142507235}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.01996008, y: 0.01996008, z: 0.01996008}
+  m_LocalScale: {x: 0.018691588, y: 0.018691588, z: 0.018691588}
   m_Children:
   - {fileID: 1669440911}
   - {fileID: 914849083}
@@ -480,7 +480,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1810355588878446, guid: 8940d596426eef243bebcbb4bd03743d,
     type: 2}
-  fireDelay: 0.25
+  fireDelay: 0.5
   shotSpawn: {fileID: 1104770924}
 --- !u!114 &883902068
 MonoBehaviour:
@@ -644,7 +644,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_BackGroundColor: {r: 0.14901961, g: 0.14901961, b: 0.14901961, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
