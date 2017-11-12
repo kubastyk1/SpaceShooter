@@ -15,8 +15,13 @@ public class DemageHandler : MonoBehaviour {
         correctLayer = gameObject.layer;
     }
 
-    void OnTriggerEnter2D()
+    void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.tag == "Boundary")
+        {
+            return;
+        }
+
         health--;
 
         invulnTimer = invulnPerion;

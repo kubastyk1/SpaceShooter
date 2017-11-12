@@ -12,7 +12,7 @@ public class ObjectDestroyer : MonoBehaviour {
 
         if (timer <= 0)
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 }
