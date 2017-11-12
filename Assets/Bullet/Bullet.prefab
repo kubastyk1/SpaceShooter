@@ -25,9 +25,10 @@ GameObject:
   - component: {fileID: 114982778789510138}
   - component: {fileID: 114303479343486690}
   - component: {fileID: 114297099162176840}
+  - component: {fileID: 114128157681125278}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,13 +91,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5, y: 8.9}
   m_EdgeRadius: 0
---- !u!114 &114297099162176840
+--- !u!114 &114128157681125278
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1810355588878446}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 498cd1475da72c04b8a1468fdecf3451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114297099162176840
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1810355588878446}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71579b770c7292d4caef2a4328c5c26b, type: 3}
   m_Name: 
@@ -108,11 +120,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1810355588878446}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 454202e7392cc5542a6b1e57723286f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bonusObject: {fileID: 0}
   health: 1
   invulnPerion: 0
 --- !u!114 &114982778789510138

@@ -101,6 +101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 454202e7392cc5542a6b1e57723286f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bonusObject: {fileID: 1016238589011734, guid: 792794d32863a394ea5173bdca0fb7ba,
+    type: 2}
   health: 1
   invulnPerion: 0
 --- !u!114 &114449894705380336
